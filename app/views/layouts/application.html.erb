@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smashbox</title>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  <%= javascript_include_tag "application", 'ui-db/jquery.ui.core','ui-db/jquery.ui.widget','ui-db/jquery.ui.position', 'ui-db/jquery.ui.menu', 'ui-db/jquery.ui.autocomplete' %>
+  <%= stylesheet_link_tag 'ui/jquery.autocomplete', 'ui/jquery-ui-1.8.14.custom' %>
+  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="header">
+	<div class="logo"><a href="/"></a></div>
+</div>
+<div class="container">
+	<div class="form">
+      <%= text_field_tag :search, params[:search], :placeholder => 'Search Employee Favorites', :class => 'bright'%>
+      <button type="submit" class="searchButton">
+		<%= image_tag("search.png", :alt => "SEARCH") %>
+      </button>
+ 	</div>
+
+<%= yield %>
+
+</div>
+</body>
+</html>

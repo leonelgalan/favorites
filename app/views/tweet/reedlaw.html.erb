@@ -1,0 +1,7 @@
+
+<% Twitter.favorites("reedlaw", count: 20).each do |tweet| %>
+  <div class="result">
+  <div class="result-picture"><img src="<%= tweet.user.profile_image_url %>" height="48" width="48"></div>
+  <div class="result-text"><a href="https://twitter.com/<%= tweet.user.screen_name %>/status/<%= tweet.id %>"><%= tweet.text %></a></div>
+  </div>
+<%end %>
