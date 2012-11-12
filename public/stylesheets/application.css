@@ -123,10 +123,7 @@ border-color: rgba(234, 21, 103, 0.3);
 	height: 45px;
 	border-right: 1px solid #CCC;
 	border-left: 1px solid #CCC;
-}
-
-.result:hover{
-	background:#F9E6EE;
+	background:#F2f2f2;
 	-webkit-transition: background-color 1000ms linear;
      -moz-transition: background-color 1000ms linear;
      -o-transition: background-color 1000ms linear;
@@ -134,14 +131,14 @@ border-color: rgba(234, 21, 103, 0.3);
      transition: background-color 1000ms linear;
 }
 
+.result:hover{
+	background:#F9E6EE;
+	
+}
+
 .result-text:hover{
 	color:#000;
-	-webkit-transition: color 1000ms linear;
-     -moz-transition: color 1000ms linear;
-     -o-transition: color 1000ms linear;
-     -ms-transition: color 1000ms linear;
-     transition: color 1000ms linear;
-	
+		
 }
 	
 .result-picture{
@@ -169,6 +166,11 @@ border-color: rgba(234, 21, 103, 0.3);
 	color: #666;
 	text-shadow: 1px 1px 1px white;
 	text-decoration:none;
+	-webkit-transition: color 1000ms linear;
+     -moz-transition: color 1000ms linear;
+     -o-transition: color 1000ms linear;
+     -ms-transition: color 1000ms linear;
+     transition: color 1000ms linear;
 }
 
 .result-text a:hover{
