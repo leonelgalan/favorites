@@ -132,7 +132,7 @@ border-color: rgba(234, 21, 103, 0.3);
 }
 
 .result:hover{
-	background:#F9E6EE;
+	background:#DDD;
 	
 }
 
@@ -191,7 +191,7 @@ input.bright{width: 300px; font-size: 16px;}
 @media all and (max-width : 385px) {
 #header .logo {width:100%;}
 .container {width:100%;}
-input.bright{width: 195px; font-size: 16px;}
+input.bright{width: 255px; font-size: 16px;}
 .searchButton{height:34px; width:50px;}
 .result{width:306px;}
 .result-text{width:234px;}
